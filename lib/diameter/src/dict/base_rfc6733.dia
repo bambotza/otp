@@ -407,7 +407,7 @@
                   1* {AVP}
 
       Experimental-Result ::= < AVP Header: 297 >
-                              { Vendor-Id }
+                              [ Vendor-Id ]
                               { Experimental-Result-Code }
 
   Vendor-Specific-Application-Id ::= < AVP Header: 260 >
