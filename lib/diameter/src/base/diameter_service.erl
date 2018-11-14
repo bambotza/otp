@@ -1099,7 +1099,7 @@ find_incoming_app(#peer{caps = Caps}, ?APP_ID_RELAY, _) ->
 
 find_incoming_app(Peer, Id, Apps)
   when is_integer(Id) ->
-    find_incoming_app(Peer, [Id, ?APP_ID_RELAY], Apps);
+    find_incoming_app(Peer, [?APP_ID_RELAY, Id], Apps);
 
 %% Note that the apps represented in SApps may be a strict subset of
 %% those in Apps.
